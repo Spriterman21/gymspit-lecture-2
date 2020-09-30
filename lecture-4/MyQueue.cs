@@ -67,5 +67,16 @@ namespace Lecture4
 		{
 			return first == null;
 		}
-	}
+
+
+        public T Last()
+        {
+            if (last == null)
+            {
+                throw new Exception();
+            }
+
+            return last.Item;
+        }
+    }
 }
